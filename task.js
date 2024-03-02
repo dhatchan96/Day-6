@@ -24,16 +24,5 @@ xhr.onreadystatechange = function () {
 xhr.send();
 
 
-// Get all the countries from Asia continent /region using Filter function
-
-xhr.onreadystatechange = function () {
-    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-        responseObject = JSON.parse(xhr.responseText);
-        const asianCountries = countries.filter(responseObject => responseObject.region === 'Asia');
-        console.log(asianCountries);
-    }
-  };
-xhr.send();
-
 
 
